@@ -6,6 +6,7 @@ export const Header = () => {
   return (
     <Flex direction={"column"}>
       <Navbar />
+      <AssecCarousel />
     </Flex>
   );
 };
