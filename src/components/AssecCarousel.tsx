@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Box, Flex, Image, IconButton, HStack, Button } from "@chakra-ui/react";
+import { Box, Flex, Image, HStack } from "@chakra-ui/react";
 
 export const AssecCarousel = () => {
   const images = [
     "/image-carousel01.png",
     "/image-carousel01.png",
     "/image-carousel01.png",
-  ]; // Imagens do carrossel
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToSlide = (index: any) => {
@@ -17,21 +18,34 @@ export const AssecCarousel = () => {
     <Flex
       position="relative"
       maxH="700px"
-      width="full"
-      justifyContent="center"
-      alignItems="center"
       overflow="hidden"
+      bg={"#000"}
+      width="100%"
+      flexDir={"column"}
+      justifyItems={"center"}
+      alignItems="center"
     >
-      <Box width="full" justifyContent={"center"}>
+      <Box
+        width="100%"
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
         <Image
           alt=""
           src="/brownbar_navbar.png"
           position={"absolute"}
-          top={"-120px"}
+          top={{
+            base: "-140px",
+            sm: "-80px",
+            md: "-100px",
+            lg: "-23%",
+            xl: "-45%",
+          }}
           opacity={"100%"}
+          width={"100%"}
           zIndex={"1"}
         />
-
         <Image src={images[currentIndex]} alt={`image-${currentIndex}`} />
       </Box>
 

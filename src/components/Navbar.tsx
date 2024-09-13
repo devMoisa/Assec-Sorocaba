@@ -66,9 +66,8 @@ export const Navbar = ({ surt }: any) => {
   return (
     <>
       <Flex
-        width={"100vw"}
         as={"nav"}
-        bg={"#fff"}
+        width={"100vw"}
         flexDir={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -80,7 +79,6 @@ export const Navbar = ({ surt }: any) => {
       >
         <Flex
           justifyContent={"center"}
-          bg={"#fff"}
           width={"90%"}
           flexDir={"row"}
           alignItems={"center"}
@@ -129,8 +127,8 @@ export const Navbar = ({ surt }: any) => {
             lg: "7xl",
             xl: "8xl",
           }}
-          paddingTop={"3%"}
-          paddingBottom={"3%"}
+          paddingTop={"30px"}
+          paddingBottom={"30px"}
         >
           <Flex
             className="top"
