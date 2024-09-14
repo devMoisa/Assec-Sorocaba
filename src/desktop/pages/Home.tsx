@@ -5,6 +5,7 @@ import OSProjetos from "../modules/OSProjetos";
 import AFila from "../modules/AFila";
 import Musicando from "../modules/Musicando";
 import Galeria from "../modules/Galeria";
+import Agenda from "../modules/Agenda";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <AFila />
       <Musicando />
       <Galeria />
+      <Agenda />
     </Flex>
   );
 };
