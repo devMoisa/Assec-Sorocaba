@@ -1,7 +1,7 @@
-import { AssecTextScope } from "@/components/AssecTextScope";
+import { AssecTextScope } from "../../OLD_components/AssecTextScope";
 import { Container, Flex, Image } from "@chakra-ui/react";
 
-export const Aassec = () => {
+export const AAssecDesktop = () => {
   return (
     <Flex
       bg={"#fff"}

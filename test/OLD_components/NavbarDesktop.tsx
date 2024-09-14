@@ -16,7 +16,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { MdOutlineMenu } from "react-icons/md";
 
-export const Navbar = ({ surt }: any) => {
+export const NavbarDesktop = ({ surt }: any) => {
   const listLinks = [
     {
       title: "A ASSEC",

@@ -1,13 +1,13 @@
 "use client";
-import { Aassec } from "@/modules/AAssec";
-import { Header } from "@/modules/Header";
-import { Flex } from "@chakra-ui/react";
+
+import HomeDesktop from "@/desktop/pages/Home";
+import HomeMobile from "@/mobile/pages/Home";
 
 export default function Home() {
   return (
-    <Flex flexDir={"column"}>
-      <Header />
-      <Aassec />
-    </Flex>
+    <>
+      <HomeMobile />
+      <HomeDesktop />
+    </>
   );
 }
