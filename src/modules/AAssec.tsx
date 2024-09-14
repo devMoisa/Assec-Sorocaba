@@ -1,38 +1,58 @@
-import { AssecParagraph } from "@/components/AssecParagraph";
-import { AssecTitle } from "@/components/AssecTitle";
-import { Flex, Image } from "@chakra-ui/react";
+import { AssecTextScope } from "@/components/AssecTextScope";
+import { Container, Flex, Image } from "@chakra-ui/react";
 
 export const Aassec = () => {
   return (
-    <Flex bg={"#fff"} flexDir={{ base: "column", md: "row" }}>
-      <Image
-        alt="Thumbnail image representing A ASSEC"
-        src={"/a_assec_thumb.png"}
-        width={{ base: "100%", md: "60%" }} // Adjust width based on screen size
-        height={"auto"}
-        objectFit={"cover"} // Ensures the image covers the available space while maintaining aspect ratio
-      />
-
-      <Flex
-        w={{ base: "100%", md: "40%" }}
-        padding={"70px"}
-        flexDir={"column"}
-        justifyContent={"center"}
-        alignItems={"center"}
+    <Flex
+      bg={"#fff"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      paddingBottom={"50PX"}
+    >
+      <Container
+        maxW={"8xl"}
+        padding={0}
+        display={"flex"}
+        flexDirection={{
+          base: "column",
+          md: "row",
+          lg: "row",
+        }}
+        w={"100%"}
+        justifyContent={"space-between"}
       >
-        <AssecTitle>A ASSEC</AssecTitle>
-        <AssecParagraph
-          style={{
-            marginTop: "20px",
-            textAlign: "center",
+        <Flex
+          className="left"
+          width={{
+            base: "100%",
+            md: "50%",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          necessitatibus iusto explicabo vitae totam molestiae. Unde reiciendis,
-          enim a repellendus placeat optio similique, perspiciatis ipsa
-          perferendis fuga eum voluptate veritatis?
-        </AssecParagraph>
-      </Flex>
+          <Image
+            src="/a_assec_thumb.png"
+            alt="A ASSEC Image"
+            h={"auto"}
+            w={"100%"}
+          />
+        </Flex>
+        <Flex
+          className="right"
+          width={{
+            base: "100%",
+            md: "50%",
+          }}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <AssecTextScope
+            title="A ASSEC"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur ratione ut ipsam dolores repudiandae. Dolores recusandae ea numquam, reiciendis officia dolorum, laboriosam sint odit explicabo animi maiores laborum minima."
+            titleBtn="SAIBA MAIS"
+            goTo="/"
+          />
+        </Flex>
+      </Container>
     </Flex>
   );
 };

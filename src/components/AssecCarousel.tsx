@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Flex, Image, HStack } from "@chakra-ui/react";
+import { Box, Flex, Image, HStack, Container } from "@chakra-ui/react";
 
 export const AssecCarousel = () => {
   const images = [
@@ -20,33 +20,29 @@ export const AssecCarousel = () => {
       maxH="700px"
       overflow="hidden"
       bg={"#000"}
-      width="100%"
       flexDir={"column"}
       justifyItems={"center"}
       alignItems="center"
     >
-      <Box
-        width="100%"
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
-        <Image
-          alt=""
-          src="/brownbar_navbar.png"
-          position={"absolute"}
-          top={{
-            base: "-140px",
-            sm: "-80px",
-            md: "-100px",
-            lg: "-23%",
-            xl: "-45%",
-          }}
-          opacity={"100%"}
-          width={"100%"}
-          zIndex={"1"}
-        />
-        <Image src={images[currentIndex]} alt={`image-${currentIndex}`} />
+      <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <Container maxW={"8xl"} padding={0}>
+          <Image
+            alt=""
+            src="/brownbar_navbar.png"
+            position={"absolute"}
+            top={{
+              base: "-140px",
+              sm: "-80px",
+              md: "-100px",
+              lg: "-23%",
+              xl: "-45%",
+            }}
+            opacity={"100%"}
+            width={"100%"}
+            zIndex={"1"}
+          />
+          <Image src={images[currentIndex]} alt={`image-${currentIndex}`} />
+        </Container>
       </Box>
 
       <HStack position="absolute" bottom="20px" spacing={2}>
