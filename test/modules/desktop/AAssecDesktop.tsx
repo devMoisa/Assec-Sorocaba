@@ -1,4 +1,4 @@
-import { AssecTextScope } from "../../OLD_components/AssecTextScope";
+import { AssecTextScope } from "../../../src/generic/components/AssecTextScope";
 import { Container, Flex, Image } from "@chakra-ui/react";
 
 export const AAssecDesktop = () => {

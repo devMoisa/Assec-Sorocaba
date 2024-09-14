@@ -5,7 +5,6 @@ import { MdOutlineMenu } from "react-icons/md";
 const Navbar = () => {
   return (
     <Flex
-      as={"nav"}
       width={"100vw"}
       flexDir={"row"}
       justifyContent={"space-between"}
