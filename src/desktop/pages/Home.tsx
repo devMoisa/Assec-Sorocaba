@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import Navbar from "../components/Navbar";
+import Header from "../modules/Header";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         lg: "flex",
       }}
     >
-      <Navbar />
+      <Header />
     </Flex>
   );
 };

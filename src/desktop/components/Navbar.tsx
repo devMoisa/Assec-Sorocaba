@@ -60,12 +60,12 @@ const Navbar = () => {
   return (
     <Flex
       as={"nav"}
-      bg={"#20110c"}
       w={"100%"}
-      height={"170px"}
-      position={"absolute"}
+      height={"180px"}
       justifyContent={"center"}
       alignItems={"center"}
+      position={"absolute"}
+      top={0}
     >
       <Container
         flexDir={"column"}
