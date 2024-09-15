@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Gotham";
   src: url("./fonts/Gotham-Black.otf");
   font-weight: 900;
@@ -108,4 +108,26 @@
   src: url("./fonts/Gotham-XLightItalic.otf");
   font-weight: 200;
   font-style: italic;
+} */
+
+.react-multi-carousel-list {
+  padding-bottom: 90px;
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  bottom: 0px;
+  left: calc(43% + 1px);
+  background-color: #fff;
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  bottom: 0;
+  right: calc(43% + 1px);
+  background-color: #fff;
+}
+
+.react-multiple-carousel__arrow::before {
+  background-color: #fff !important;
+  color: #0e71b8;
+  font-size: 43px;
 }
