@@ -6,6 +6,8 @@ import AFila from "../modules/AFila";
 import Musicando from "../modules/Musicando";
 import Galeria from "../modules/Galeria";
 import Agenda from "../modules/Agenda";
+import FaleConosco from "../modules/FaleConosco";
+import Footer from "../modules/Footer";
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
       <Musicando />
       <Galeria />
       <Agenda />
+      <FaleConosco />
+      <Footer />
     </Flex>
   );
 };
