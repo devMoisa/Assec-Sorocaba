@@ -6,25 +6,33 @@ const PosFooter = () => {
       w={"100%"}
       justifyContent={"center"}
       alignItems={"center"}
-      bg={"#fff"}
+      bg={"#949494"}
     >
       <Container
-        padding={0}
+        padding={"30px"}
         flexDir={"row"}
         flexWrap={"nowrap"}
         justifyContent={"space-between"}
         display={"flex"}
         maxW={{
-          base: "8xl",
-          md: "6xl",
-          lg: "8xl",
-          xl: "8xl",
+          base: "3xl",
+          md: "3xl",
+          lg: "3xl",
+          xl: "3xl",
         }}
       >
-        <Link>IMPRENSA</Link>
-        <Link>WEBTV</Link>
-        <Link>NEWSLETTER</Link>
-        <Link>POLITICA DE PRIVACIDADE</Link>
+        <Link fontSize={"13px"} color={"white"} href="/">
+          IMPRENSA
+        </Link>
+        <Link fontSize={"13px"} color={"white"} href="/">
+          WEBTV
+        </Link>
+        <Link fontSize={"13px"} color={"white"} href="/">
+          NEWSLETTER
+        </Link>
+        <Link fontSize={"13px"} color={"white"} href="/">
+          POLITICA DE PRIVACIDADE
+        </Link>
       </Container>
     </Flex>
   );

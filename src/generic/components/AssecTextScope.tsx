@@ -24,8 +24,8 @@ export const AssecTextScope = ({
         fontWeight={"normal"}
         fontFamily={"Gotham"}
         fontSize={{
-          base: "20px",
-          sm: "25px",
+          base: "35px",
+          sm: "35px",
           lg: "30px",
         }}
         marginTop={{
@@ -42,7 +42,10 @@ export const AssecTextScope = ({
           mt={"20px"}
           as={"p"}
           textAlign={"center"}
-          w={"70%"}
+          w={{
+            md: "90%",
+            lg: "70%",
+          }}
         >
           {description}
         </Text>

@@ -13,11 +13,11 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 3,
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 3,
+    items: 2,
   },
 };
 
@@ -164,6 +164,7 @@ const Agenda = () => {
           padding={"25px"}
           maxW={{
             base: "8xl",
+
             md: "6xl",
             lg: "8xl",
             xl: "8xl",

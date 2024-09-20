@@ -17,7 +17,11 @@ const FaleConosco = () => {
       mb={"200px"}
     >
       <Container
-        padding={0}
+        padding={{
+          base: "13%",
+          sm: "8%",
+          lg: "0",
+        }}
         flexWrap={"nowrap"}
         justifyContent={"space-between"}
         display={"flex"}

@@ -1,114 +1,114 @@
-/* @font-face {
+@font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Black.otf");
+  src: "./fonts/GothamBlack.otf";
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-BlackItalic.otf");
+  src: "./fonts/Gotham-BlackItalic.otf";
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Bold.otf");
+  src: "./fonts/Gotham-Bold.otf";
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-BoldItalic.otf");
+  src: "./fonts/Gotham-BoldItalic.otf";
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Book.otf");
+  src: "./fonts/Gotham-Book.otf";
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-BookItalic.otf");
+  src: "./fonts/Gotham-BookItalic.otf";
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Light.otf");
+  src: "./fonts/Gotham-Light.otf";
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-LightItalic.otf");
+  src: "./fonts/Gotham-LightItalic.otf";
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Medium.otf");
+  src: "./fonts/Gotham-Medium.otf";
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-MediumItalic.otf");
+  src: "./fonts/Gotham-MediumItalic.otf";
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Thin.otf");
+  src: "./fonts/Gotham-Thin.otf";
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-ThinItalic.otf");
+  src: "./fonts/Gotham-ThinItalic.otf";
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-Ultra.otf");
+  src: "./fonts/Gotham-Ultra.otf";
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-UltraItalic.otf");
+  src: "./fonts/Gotham-UltraItalic.otf";
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-XLight.otf");
+  src: "./fonts/Gotham-XLight.otf";
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("./fonts/Gotham-XLightItalic.otf");
+  src: "./fonts/Gotham-XLightItalic.otf";
   font-weight: 200;
   font-style: italic;
-} */
+}
 
 .react-multi-carousel-list {
   padding-bottom: 90px;
@@ -130,4 +130,8 @@
   background-color: #fff !important;
   color: #0e71b8;
   font-size: 43px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

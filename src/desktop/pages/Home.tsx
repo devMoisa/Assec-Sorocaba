@@ -8,6 +8,7 @@ import Galeria from "../modules/Galeria";
 import Agenda from "../modules/Agenda";
 import FaleConosco from "../modules/FaleConosco";
 import Footer from "../modules/Footer";
+import PosFooter from "../modules/PosFooter";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <Agenda />
       <FaleConosco />
       <Footer />
+      <PosFooter />
     </Flex>
   );
 };
