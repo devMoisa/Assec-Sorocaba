@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import "../global.css";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
+import { Session } from "@/components/Session";
 
 // Definindo as fontes usando localFont
 const gothamFont = localFont({
@@ -97,6 +98,50 @@ export default function Home() {
     <div className={gothamFont.className}>
       <Navbar />
       <Header />
+      <Session
+        side={"left"}
+        title="A ASSEC"
+        alt={"A ASSEC - Image"}
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti ipsum exercitationem vel tenetur? Quod corrupti quam, odio exercitationem beatae voluptatum, cupiditate maxime tempore rerum officiis ea dignissimos, ipsam maiores."
+        imagePath={"/a_assec_thumb.png"}
+        titleButton="SAIBA MAIS"
+        urlButton="#"
+      />
+      <Session
+        side={"right"}
+        title="OS PROJETOS"
+        alt={"A ASSEC - Image"}
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti ipsum exercitationem vel tenetur? Quod corrupti quam, odio exercitationem beatae voluptatum, cupiditate maxime tempore rerum officiis ea dignissimos, ipsam maiores."
+        imagePath={"/a_planta_thumb_mobile.png"}
+        titleButton="SAIBA MAIS"
+        urlButton="#"
+      />
+      <Session
+        side={"left"}
+        title="A FILA"
+        alt={"A ASSEC - Image"}
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti ipsum exercitationem vel tenetur? Quod corrupti quam, odio exercitationem beatae voluptatum, cupiditate maxime tempore rerum officiis ea dignissimos, ipsam maiores."
+        imagePath={"/violin_thumb.png"}
+        titleButton="SAIBA MAIS"
+        urlButton="#"
+      />
+      <Session
+        side={"right"}
+        title="MUSICANDO"
+        alt={"A ASSEC - Image"}
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deleniti ipsum exercitationem vel tenetur? Quod corrupti quam, odio exercitationem beatae voluptatum, cupiditate maxime tempore rerum officiis ea dignissimos, ipsam maiores."
+        imagePath={"/boy_thumb.png"}
+        titleButton="SAIBA MAIS"
+        urlButton="#"
+      />
+      <Session
+        side={"left"}
+        title="GALERIA"
+        alt={"A ASSEC - Image"}
+        imagePath={"/hands_thumb.png"}
+        titleButton="CONFIRA"
+        urlButton="#"
+      />
     </div>
   );
 }
