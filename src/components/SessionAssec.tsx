@@ -38,9 +38,11 @@ export const SessionAssec = ({
           />
         </div>
         <div className="w-full container lg:w-1/2 flex flex-col justify-center items-start lg:pl-24 lg:pr-24 pb-32 lg:p-0">
-          <h2 className="text-3xl mt-10 lg:mt-0 sm:mt-10 lg:text-3xl font-[var(--font-gotham)]">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="text-3xl mt-10 lg:mt-0 sm:mt-10 lg:text-3xl font-[var(--font-gotham)]">
+              {title}
+            </h2>
+          )}
           {description && (
             <p className="text-start text-sm w-[70%] lg:w-full mt-4 lg:mt-7 font-[var(--font-gotham)] whitespace-pre-wrap">
               {description}
