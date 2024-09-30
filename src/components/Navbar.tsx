@@ -22,7 +22,7 @@ const menuItems: MenuItem[] = [
     title: "A ASSEC",
     links: [
       { name: "TIMELINE", goTo: "a-assec" },
-      { name: "MANIFESTO", goTo: "#manifesto" },
+      { name: "MANIFESTO", goTo: "manifesto" },
     ],
   },
   {
