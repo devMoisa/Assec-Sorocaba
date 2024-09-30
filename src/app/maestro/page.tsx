@@ -5,13 +5,11 @@ import "../../global.css";
 
 import { Navbar } from "@/components/Navbar";
 import { SessionAssec } from "@/components/SessionAssec";
-import Image from "next/image";
 
 export default function Maestro() {
   return (
     <div className="flex flex-col">
       <Navbar isCarousel={false} dark={true} />
-      {/* <div className="container mt-10 mb-20 flex flex-row gap-10 flex-wrap"> */}
       <div className="container mt-10 mb-20 flex flex-col-reverse gap-10 lg:flex-row">
         <img
           src={"/MaestroDenis1.jpg"}

@@ -39,7 +39,7 @@ export default function Manifesto() {
           veniam iste itaque soluta voluptatem, natus ut reprehenderit incidunt
           dolorum sapiente voluptate at? Eos quas ut velit aliquam fugiat?
         </p>
-        <div className="flex justify-center mt-14 mb-10">
+        <div className="flex justify-center mt-10 mb-10">
           <Image height={140} width={140} src="/logo_footer.png" alt="ASSEC" />
         </div>
       </div>
