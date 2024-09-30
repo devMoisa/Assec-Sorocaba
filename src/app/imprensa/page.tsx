@@ -9,7 +9,7 @@ export default function Imprensa() {
     <div className="flex flex-col min-h-screen">
       <Navbar isCarousel={false} dark={true} />
       <main className="container pl-10 px-4 py-10 flex-grow mb-10">
-        <h1 className="text-black text-4xl font-light mb-10 text-left">
+        <h1 className="text-black text-4xl mb-10 text-left font-extralight font-[var(--font-gotham)]">
           IMPRENSA
         </h1>
         <h2 className="text-2xl font-light mb-6">
