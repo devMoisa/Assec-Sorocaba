@@ -13,8 +13,8 @@ export default function Imprensa() {
           IMPRENSA
         </h1>
         <h2 className="text-2xl font-light mb-6">
-          Bem-vindo(a) à área de contato da <br />
-          ASSEC - Associação de Eventos Culturais de Sorocaba
+          Bem-vindo(a) à área de contato da ASSEC - Associação de Eventos
+          Culturais de Sorocaba
         </h2>
         <p className="max-w-prose mb-6 text-lg">
           Se você é um membro da imprensa e deseja obter informações sobre
