@@ -231,7 +231,9 @@ export const Navbar = ({ dark = false, isCarousel = false }: NavbarProps) => {
               <a href="#">transparência</a>
               <a href="#">parceiros</a>
               <a
-                className="border-spacing-5 border-[1px] border-white p-3 pl-4 pr-4"
+                className={`border-spacing-5 border-[1px] ${
+                  dark ? "border-gray-400" : "border-white"
+                } p-3 pl-4 pr-4`}
                 href="#"
               >
                 fale conosco
