@@ -21,7 +21,7 @@ const menuItems: MenuItem[] = [
   {
     title: "A ASSEC",
     links: [
-      { name: "TIMELINE", goTo: "#timeline" },
+      { name: "TIMELINE", goTo: "a-assec" },
       { name: "MANIFESTO", goTo: "#manifesto" },
     ],
   },
@@ -121,7 +121,12 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
   );
 };
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  dark?: boolean;
+  isCarousel?: boolean;
+}
+
+export const Navbar = ({ dark = false, isCarousel = false }: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const [openItems, setOpenItems] = useState<{ [key: number]: boolean }>({});
 
@@ -183,7 +188,13 @@ export const Navbar: React.FC = () => {
       )}
 
       {/* Desktop */}
-      <nav className="absolute z-10 font-[var(--font-gotham), sans-serif] hidden lg:flex  w-full text-white pt-7 pb-10 uppercase">
+      <nav
+        className={`
+        ${isCarousel && "absolute"}
+         z-10 font-[var(--font-gotham), sans-serif] hidden lg:flex  w-full pt-7 pb-10 uppercase
+         ${dark ? "text-black" : "text-white"}
+         `}
+      >
         <div className="container flex flex-col">
           <div className="top flex justify-end gap-10 items-center">
             <div className="flex gap-5 text-[0.7rem]">
@@ -200,15 +211,15 @@ export const Navbar: React.FC = () => {
           <div className="bottom mt-5 flex w-full justify-between">
             <div className="flex flex-row justify-center items-center gap-2">
               <Image
-                alt="ASSEC Sorocaba"
-                src={"/logo.png"}
-                height={60}
                 width={60}
+                height={60}
+                alt="ASSEC Sorocaba"
+                src={`${dark ? "/logo_colored.png" : "/logo.png"}`}
               />
-              <h1 className="uppercase text-white text-3xl">assec</h1>
+              <h1 className="uppercase text-3xl">assec</h1>
             </div>
             <div className="linkList flex items-center gap-5 text-[0.8rem]">
-              <a href="#" className="hidden xl:flex">
+              <a href="a-assec" className="hidden xl:flex">
                 a assec
               </a>
               <a href="#" className="hidden xl:flex">

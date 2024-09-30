@@ -99,7 +99,7 @@ const gothamFont = localFont({
 export default function Home() {
   return (
     <div className={gothamFont.className}>
-      <Navbar />
+      <Navbar isCarousel={true} />
       <Header />
       <Session
         side={"left"}
