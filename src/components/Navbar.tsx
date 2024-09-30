@@ -160,7 +160,7 @@ export const Navbar = ({ dark = false, isCarousel = false }: NavbarProps) => {
       {open && (
         <div
           id="navbarMobileOpen"
-          className="absolute top-25 right-0 w-full bg-[#F4F4F4] z-10 lg:hidden"
+          className="absolute top-24 right-0 w-full bg-[#F4F4F4] z-10 lg:hidden"
         >
           <div className="pl-10 pr-10 pt-10 mb-28">
             <div className="flex justify-center ">
