@@ -26,7 +26,7 @@ const menuItems: MenuItem[] = [
     ],
   },
   {
-    title: "A FILAHARMÔNICA",
+    title: "A FILA",
     links: [
       { name: "MAESTRO", goTo: "maestro" },
       { name: "HISTÓRIA", goTo: "historia-da-fila" },
