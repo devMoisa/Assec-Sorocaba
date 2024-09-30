@@ -37,9 +37,25 @@ export const SessionAssec = ({
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="w-full container lg:w-1/2 flex flex-col justify-center items-start lg:pl-24 lg:pr-24 pb-32 lg:p-0">
+        <div
+          className="
+            flex 
+    w-full 
+    flex-col 
+    justify-center 
+    items-center  /* Centraliza o texto no mobile */
+    pb-24
+    pt-10
+    lg:pb-32
+    lg:w-1/2  
+    lg:items-start  /* Alinha o texto à esquerda a partir de lg */
+    lg:pl-24 
+    lg:pr-24 
+    lg:p-0
+        "
+        >
           {title && (
-            <h2 className="text-3xl mt-10 lg:mt-0 sm:mt-10 lg:text-3xl font-[var(--font-gotham)]">
+            <h2 className="text-3xl mt-10 lg:mt-5 lg:text-3xl font-[var(--font-gotham)]">
               {title}
             </h2>
           )}

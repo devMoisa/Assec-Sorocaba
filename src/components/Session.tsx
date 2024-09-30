@@ -38,9 +38,11 @@ export const Session = ({
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:pl-24 lg:pr-24">
-          <h2 className="text-3xl mt-32 sm:mt-20 lg:text-4xl font-[var(--font-gotham)]">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="text-3xl mt-32 sm:mt-20 lg:text-4xl font-[var(--font-gotham)]">
+              {title}
+            </h2>
+          )}
           {description && (
             <p className="text-center w-[70%] lg:w-full mt-4 lg:mt-7 font-[var(--font-gotham)]">
               {description}
