@@ -11,7 +11,7 @@ export default function Agenda() {
       <Navbar isCarousel={false} dark={true} />
       <div className="container flex justify-center flex-col">
         <h1 className="mt-10 mb-10 text-black text-start text-4xl font-extralight font-[var(--font-gotham)">
-          ESPORTES
+          AGENDA
         </h1>
         <AgendaCard
           title="Lorem Ipsum"
