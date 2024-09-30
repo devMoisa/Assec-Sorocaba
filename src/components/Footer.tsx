@@ -94,13 +94,16 @@ export const Footer = () => {
           <div className="flex gap-8 justify-between flex-wrap flex-col md:flex-row">
             {linkList.map((item, index) => (
               <div key={index}>
-                <a className="text-black" href={item.goTo}>
+                <a
+                  className="text-black cursor-pointer hover:opacity-50 transition"
+                  href={item.goTo}
+                >
                   {item.title}
                 </a>
                 <div className="flex flex-col mt-3">
                   {item.subLinkList.map((subItem, subIndex) => (
                     <a
-                      className="text-sm mb-2 text-gray-500"
+                      className="text-sm mb-2 text-gray-500 cursor-pointer hover:opacity-50 transition"
                       key={subIndex}
                       href={subItem.goTo}
                     >
@@ -119,11 +122,7 @@ export const Footer = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="mb-4
-            h-auto
-            w-[20%]
-            sm:w-[13%]
-            "
+              className="mb-4 h-auto w-[20%] sm:w-[13%] cursor-pointer hover:opacity-50 transition"
             />
             <p className="text-sm text-gray-500 text-center w-[80%] md:w-full">
               Rua Bernardo Ferraz de Almeida, 172, Sala 03, JD. Faculdade,
@@ -131,21 +130,29 @@ export const Footer = () => {
             </p>
 
             <div className="flex gap-3 items-center">
-              <FaInstagram className="text-2xl text-black" />
-              <FaFacebookSquare className="text-2xl text-black" />
-              <FaYoutube className="text-2xl text-black" />
-              <FaWhatsapp className="text-2xl text-black" />
-              <TfiEmail className="text-2xl text-black" />
+              <FaInstagram className="text-2xl text-black cursor-pointer hover:opacity-50 transition" />
+              <FaFacebookSquare className="text-2xl text-black cursor-pointer hover:opacity-50 transition" />
+              <FaYoutube className="text-2xl text-black cursor-pointer hover:opacity-50 transition" />
+              <FaWhatsapp className="text-2xl text-black cursor-pointer hover:opacity-50 transition" />
+              <TfiEmail className="text-2xl text-black cursor-pointer hover:opacity-50 transition" />
             </div>
           </div>
         </div>
       </footer>
       <div className="w-full bg-[#949494]">
         <div className="flex flex-col md:flex-row container justify-center pt-10 pb-10 text-white gap-5 text-sm  text-wrap">
-          <a href="#">IMPRENSA</a>
-          <a href="#">WEBTV</a>
-          <a href="#">NEWSLETTER</a>
-          <a href="#">POLITICA DE PRIVACIDADE</a>
+          <a href="#" className="cursor-pointer hover:opacity-50 transition">
+            IMPRENSA
+          </a>
+          <a href="#" className="cursor-pointer hover:opacity-50 transition">
+            WEBTV
+          </a>
+          <a href="#" className="cursor-pointer hover:opacity-50 transition">
+            NEWSLETTER
+          </a>
+          <a href="#" className="cursor-pointer hover:opacity-50 transition">
+            POLITICA DE PRIVACIDADE
+          </a>
         </div>
       </div>
     </>

@@ -104,7 +104,12 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
         <div className="w-full bg-[#e2e2e2] p-5 pl-7 pr-7 mb-5">
           {links.map((link, index) => (
             <React.Fragment key={index}>
-              <a href={link.goTo}>{link.name}</a>
+              <a
+                href={link.goTo}
+                className="hover:opacity-50 cursor-pointer transition"
+              >
+                {link.name}
+              </a>
               {index < links.length - 1 && (
                 <hr className="mt-2 mb-2 text-3xl h-[1px] bg-[#cacaca]" />
               )}
@@ -150,12 +155,17 @@ export const Navbar: React.FC = () => {
       {open && (
         <div
           id="navbarMobileOpen"
-          className="absolute top-25 right-0 w-full bg-[#F4F4F4] z-10"
+          className="absolute top-25 right-0 w-full bg-[#F4F4F4] z-10 lg:hidden"
         >
           <div className="pl-10 pr-10 pt-10 mb-28">
-            <div className="flex justify-center">
-              <span className="text-[#1366AC]">PORTUGUÊS |</span>{" "}
-              <span className="text-gray-400 ml-2">ENGLISH</span>
+            <div className="flex justify-center ">
+              <span className="text-[#1366AC] cursor-pointer hover:opacity-50 transition">
+                PORTUGUÊS
+              </span>
+              <span className="ml-2 text-[#1366AC]">|</span>
+              <span className="text-gray-400 ml-2 cursor-pointer hover:opacity-50 transition">
+                ENGLISH
+              </span>
             </div>
 
             {menuItems.map((item, index) => (
@@ -177,18 +187,38 @@ export const Navbar: React.FC = () => {
         <div className="container flex flex-col">
           <div className="top flex justify-end gap-10 items-center">
             <div className="flex gap-5 text-[0.7rem]">
-              <a href="#">imprensa</a>
-              <a href="#">webtv</a>
-              <a href="#">newsletter</a>
+              <a
+                href="#"
+                className="hover:opacity-50 cursor-pointer transition"
+              >
+                imprensa
+              </a>
+              <a
+                href="#"
+                className="hover:opacity-50 cursor-pointer transition"
+              >
+                webtv
+              </a>
+              <a
+                href="#"
+                className="hover:opacity-50 cursor-pointer transition"
+              >
+                newsletter
+              </a>
             </div>
             <div className="flex gap-5">
-              <FaInstagram />
-              <FaFacebookSquare />
-              <FaYoutube />
+              <FaInstagram className="hover:opacity-50 cursor-pointer transition" />
+              <FaFacebookSquare className="hover:opacity-50 cursor-pointer transition" />
+              <FaYoutube className="hover:opacity-50 cursor-pointer transition" />
             </div>
           </div>
           <div className="bottom mt-5 flex w-full justify-between">
-            <div className="flex flex-row justify-center items-center gap-2">
+            <a
+              href="#"
+              className="flex flex-row justify-center items-center gap-2
+               hover:opacity-50 cursor-pointer transition
+            "
+            >
               <Image
                 alt="ASSEC Sorocaba"
                 src={"/logo.png"}
@@ -196,24 +226,31 @@ export const Navbar: React.FC = () => {
                 width={60}
               />
               <h1 className="uppercase text-white text-3xl">assec</h1>
-            </div>
+            </a>
             <div className="linkList flex items-center gap-5 text-[0.8rem]">
               {menuItems.map((item, index) => (
                 <a
                   key={index}
                   href={item.goTo || "#"}
-                  className={`${item.links ? "hidden xl:flex" : ""}`}
+                  className={`${index < 3 ? "hidden " : "hidden md:flex"}
+                  hover:opacity-50 cursor-pointer transition
+                  `}
                 >
                   {item.title.toLowerCase()}
                 </a>
               ))}
               <a
-                className="border-spacing-5 border-[1px] border-white p-3 pl-4 pr-4"
+                className="border-spacing-5 border-[1px] border-white p-3 pl-4 pr-4 hover:bg-white hover:text-black transition                "
                 href="#fale-conosco"
               >
                 fale conosco
               </a>
-              <a href="#">pt</a>
+              <a
+                href="#"
+                className="hover:opacity-50 cursor-pointer transition"
+              >
+                pt
+              </a>
             </div>
           </div>
         </div>
