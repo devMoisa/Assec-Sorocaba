@@ -183,42 +183,22 @@ export const Navbar: React.FC = () => {
       )}
 
       {/* Desktop */}
-      <nav className="absolute z-10 font-[var(--font-gotham), sans-serif] hidden lg:flex w-full text-white pt-7 pb-10 uppercase">
+      <nav className="absolute z-10 font-[var(--font-gotham), sans-serif] hidden lg:flex  w-full text-white pt-7 pb-10 uppercase">
         <div className="container flex flex-col">
           <div className="top flex justify-end gap-10 items-center">
             <div className="flex gap-5 text-[0.7rem]">
-              <a
-                href="#"
-                className="hover:opacity-50 cursor-pointer transition"
-              >
-                imprensa
-              </a>
-              <a
-                href="#"
-                className="hover:opacity-50 cursor-pointer transition"
-              >
-                webtv
-              </a>
-              <a
-                href="#"
-                className="hover:opacity-50 cursor-pointer transition"
-              >
-                newsletter
-              </a>
+              <a href="#">imprensa</a>
+              <a href="#">webtv</a>
+              <a href="#">newsletter</a>
             </div>
             <div className="flex gap-5">
-              <FaInstagram className="hover:opacity-50 cursor-pointer transition" />
-              <FaFacebookSquare className="hover:opacity-50 cursor-pointer transition" />
-              <FaYoutube className="hover:opacity-50 cursor-pointer transition" />
+              <FaInstagram />
+              <FaFacebookSquare />
+              <FaYoutube />
             </div>
           </div>
           <div className="bottom mt-5 flex w-full justify-between">
-            <a
-              href="#"
-              className="flex flex-row justify-center items-center gap-2
-               hover:opacity-50 cursor-pointer transition
-            "
-            >
+            <div className="flex flex-row justify-center items-center gap-2">
               <Image
                 alt="ASSEC Sorocaba"
                 src={"/logo.png"}
@@ -226,31 +206,26 @@ export const Navbar: React.FC = () => {
                 width={60}
               />
               <h1 className="uppercase text-white text-3xl">assec</h1>
-            </a>
+            </div>
             <div className="linkList flex items-center gap-5 text-[0.8rem]">
-              {menuItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.goTo || "#"}
-                  className={`${index < 3 ? "hidden " : "hidden md:flex"}
-                  hover:opacity-50 cursor-pointer transition
-                  `}
-                >
-                  {item.title.toLowerCase()}
-                </a>
-              ))}
+              <a href="#" className="hidden xl:flex">
+                a assec
+              </a>
+              <a href="#" className="hidden xl:flex">
+                a filahârmonica
+              </a>
+              <a href="#">os projetos</a>
+              <a href="#">agenda</a>
+              <a href="#">galeria</a>
+              <a href="#">transparência</a>
+              <a href="#">parceiros</a>
               <a
-                className="border-spacing-5 border-[1px] border-white p-3 pl-4 pr-4 hover:bg-white hover:text-black transition                "
-                href="#fale-conosco"
+                className="border-spacing-5 border-[1px] border-white p-3 pl-4 pr-4"
+                href="#"
               >
                 fale conosco
               </a>
-              <a
-                href="#"
-                className="hover:opacity-50 cursor-pointer transition"
-              >
-                pt
-              </a>
+              <a href="#">pt</a>
             </div>
           </div>
         </div>
