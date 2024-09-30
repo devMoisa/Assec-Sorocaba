@@ -37,12 +37,12 @@ export const SessionAssec = ({
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start lg:pl-24 lg:pr-24">
-          <h2 className="text-3xl mt-32 sm:mt-20 lg:text-3xl font-[var(--font-gotham)]">
+        <div className="w-full container lg:w-1/2 flex flex-col justify-center items-start lg:pl-24 lg:pr-24 pb-32 lg:p-0">
+          <h2 className="text-3xl mt-10 lg:mt-0 sm:mt-10 lg:text-3xl font-[var(--font-gotham)]">
             {title}
           </h2>
           {description && (
-            <p className="text-start w-[70%] lg:w-full mt-4 lg:mt-7 font-[var(--font-gotham)] whitespace-pre-wrap">
+            <p className="text-start text-sm w-[70%] lg:w-full mt-4 lg:mt-7 font-[var(--font-gotham)] whitespace-pre-wrap">
               {description}
             </p>
           )}
