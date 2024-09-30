@@ -5,6 +5,9 @@ import "../global.css";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Session } from "@/components/Session";
+import { Schedule } from "@/components/Schedule";
+import ContactForm from "@/components/ContactForm";
+import { Footer } from "@/components/Footer";
 
 // Definindo as fontes usando localFont
 const gothamFont = localFont({
@@ -142,6 +145,9 @@ export default function Home() {
         titleButton="CONFIRA"
         urlButton="#"
       />
+      <Schedule />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
